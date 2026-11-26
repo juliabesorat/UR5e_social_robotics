@@ -25,6 +25,8 @@ setup(
             'ur5e_fkine_exe = ur5e_robot_controller.ur5e_fkine:main',
             'ur5e_pose_exe = ur5e_robot_controller.ur5e_pose:main',
             "ur5e_pose_sequence_exe = ur5e_robot_controller.ur5e_pose_sequence:main",
+            "ur5e_pose_sequence_moveit_exe = ur5e_robot_controller.ur5e_pose_sequence_moveit:main",
+            "ur5e_test_scene_exe = ur5e_robot_controller.ur5e_test_scene:main",
         ],
     },
 )

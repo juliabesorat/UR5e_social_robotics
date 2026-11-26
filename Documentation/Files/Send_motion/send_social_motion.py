@@ -7,11 +7,11 @@ from pathlib import Path
 # CONFIGURACIÓ
 # -------------------------
 
-PROFESSOR_IP = "192.168.0.10"
-PROFESSOR_USER = "student"
+PROFESSOR_IP = "192.168.1.5"
+PROFESSOR_USER = "biorob"
 
-LOCAL_FOLDER = "/home/student/UR5e_social_robotics/src/social_robot_behaviors/motions/"
-REMOTE_FOLDER = "/home/biorob/UR5e_social_robotics/install/social_robot_behaviors/share/social_robot_behaviors/motions/"
+LOCAL_FOLDER = "/home/student/Desktop/UR5e_social_robotics/src/social_robot_behaviors/motions/"
+REMOTE_FOLDER = "/home/biorob/Desktop/UR5e_social_robotics/install/social_robot_behaviors/share/social_robot_behaviors/motions/"
 
 # -------------------------
 

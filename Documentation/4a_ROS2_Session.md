@@ -7,7 +7,7 @@ before working with both PCs in the [classroom](2_UR5e_Classroom_Architecture.md
 ## Define your social movement
 
 Copy `handshake.yaml` from [the example motions](../src/social_robot_behaviors/motions/)
-to `src/social_robot_behaviors/motions/<motion_name>.yaml`. Use a lowercase name
+and paste it with a new name to `src/social_robot_behaviors/motions/<motion_name>.yaml`. Use a lowercase name
 without spaces. ROS 2 looks up the filename using the requested motion name,
 without the `.yaml` extension.
 
@@ -42,9 +42,7 @@ steps:
 - `seed_from_joint_states: true` uses the current joint state as the starting point for inverse kinematics. When supplying `seed_joints`, give six joint angles in degrees.
 
 Add the intermediate and final poses under `steps`. Keep the start and end
-configurations safe and verify each step in simulation. Follow the local
-simulation guide to make the YAML available in your local install space. In the
-lab, copy it into the Teacher's install space using step 2 below.
+configurations safe.
 
 ## 1. Configure ROS 2 multicast
 
@@ -103,18 +101,10 @@ export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 ## 2. Send `<motion_name>.yaml` to the Teacher PC
 
-On the Student PC, open:
+On the Student PC, open new terminal and execute
 
 ```bash
-nano ~/UR5e_social_robotics/Documentation/Files/Send_motion/send_social_motion.py
-```
-
-The default parameters are prepared for the laboratory. Check `PROFESSOR_IP`, `PROFESSOR_USER`, `LOCAL_FOLDER` and `REMOTE_FOLDER` before running it. `REMOTE_FOLDER` must point to the Teacher `install/social_robot_behaviors/share/social_robot_behaviors/motions/` directory.
-
-Run the copy tool:
-
-```bash
-cd ~/UR5e_social_robotics/Documentation/Files/Send_motion
+cd ~/Desktop/UR5e_social_robotics/Documentation/Files/Send_motion
 python3 send_social_motion.py
 ```
 
